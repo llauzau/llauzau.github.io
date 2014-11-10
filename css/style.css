@@ -1,0 +1,133 @@
+*{
+  margin: 0;
+}
+
+body {
+	font-family: open sans, arial, sans-serif;
+	font-size: 16px;
+	border: none;
+}
+
+h1{
+	font-family: 'Dancing Script', cursive;	
+	font-size: 4em;
+	text-align: center;
+	margin: .25em 0 .75em 0;
+}
+
+h2 {
+	font-weight: 300;
+	letter-spacing: .125em;
+}
+
+a {
+	text-decoration: none !important;
+	color: black;
+}
+
+a:hover {
+	color: #458b74;
+}
+
+p {
+	margin: 2em 0 0 0;
+	line-height: 1.75em;
+}
+
+.all-projects {
+  width: 99%;
+  margin: 10px auto;
+}
+
+.project,
+.blog {
+	height: 300px;
+	width: 33%;
+	display: inline-block;
+}
+
+.project {
+	background-position: center;
+}
+
+.natural-foods {
+	background-image: url("../images/Project1.jpg");
+}
+
+.refrigerated-foods {
+	background-image: url("../images/Project2.jpg");
+}
+
+.bts {
+	background-image: url("../images/Project3.jpg");
+}
+
+.mymag {
+	background-image: url("../images/Project4.jpg");
+}
+
+.bourbonchase {
+	background-image: url("../images/Project5.jpg");
+}
+
+.raleys-email {
+	background-image: url("../images/Project6.jpg");
+}
+
+.beauty {
+	background-image: url("../images/Project7.jpg");
+}
+
+.blog {
+	text-align: center;
+	background-color: #458b74;
+}
+
+.project-page {
+  width: 99%;
+  margin: 10px auto;
+}
+
+.description-container,
+.thumbnails
+{
+	width: 40%;
+	float: left;
+	overflow: hidden;
+	margin: 2em 0 0 0;
+}
+
+.description {
+	padding: 0 0 0 100px;
+}
+
+.thumbnails {
+	width: 50%;
+	margin: 2em 0 0 4em;
+}
+
+.footer {
+	height: 100px;
+	width: 100%;
+  margin: 4px 0 0 0;
+  border-top: 1px solid black;
+  clear: both;
+}
+
+@media (max-width: 850px) {
+	.project,
+	.blog {
+		width: 49%;
+	}
+
+	h1 {
+		text-align: center;
+	}
+}
+
+@media (max-width: 400px) {
+	.project,
+	.blog {
+		width: 99%;
+	}
+}
