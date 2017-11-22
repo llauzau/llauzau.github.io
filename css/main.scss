@@ -3,3 +3,14 @@
 ---
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "main";
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
