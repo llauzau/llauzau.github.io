@@ -6,11 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Lauren Lauzau
 permalink: /blog/:year/:month/:day/:title
-email: lep552@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  designer <a href="https://twitter.com/8451group">@8451group</a>, road biker, hiker, and mom
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://laurenlauzau.com" # the base hostname & protocol for your site
 
