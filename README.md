@@ -1,8 +1,8 @@
 llauzau.github.io
 ====================
 
-##Setup
+## Setup
 - Run: `gem install jekyll bundler`
 
-##Running
+## Running
 - Run: `jekyll serve`
