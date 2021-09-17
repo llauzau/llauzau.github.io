@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html stylesheet="/css/main.css" %}
+{% include head.html stylesheet="/css/app.css" %}
+<header class="top-nav">
+  <div class="logo">L.L.</div>
+  <div class="u-flex">
+    <a href="#">Work</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</header>
 
-  <body>
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+<body>
+  <div>
+    <div>
+      {{ content }}
     </div>
-
-  </body>
+  </div>
+</body>
 
 </html>
