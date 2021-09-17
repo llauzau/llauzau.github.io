@@ -1,0 +1,451 @@
+// COLOR
+.u-color {
+  &--alert {
+    color: $color-alert;
+    text-decoration-color: $color-alert;
+  }
+
+
+  &--info {
+    color: $color-action;
+  }
+
+  &--gray {
+    color: $gray-dark;
+  }
+
+  &--gray-light {
+    color: $gray;
+  }
+
+  &--blue {
+    color: $blue;
+  }
+
+  &--orange {
+    color: $orange;
+  }
+}
+
+// DISPLAY
+.u-display {
+
+  &__mobile {
+    &--none{
+      @media screen and (max-width: $screen-mobile) {
+        display: none;
+      }
+    }
+  }
+  &--none{
+    display: none;
+  }
+}
+
+.u-flex {
+  display: flex;
+    align-items: baseline;
+    gap: $space-sm $space-md;
+
+  &__gap {
+    &--xs {
+      gap: 0 $space-xs;
+    }
+
+    &--sm {
+      gap: 0 $space-sm;
+    }
+
+    &--lg {
+      gap: 0 $space-lg;
+    }
+  }
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  &__align {
+    &--baseline {
+      align-items: baseline;
+    }
+
+    &--center {
+      align-items: center;
+    }
+
+    &--start {
+      align-items: flex-start;
+    }
+
+    &--end {
+      align-items: flex-end;
+    }
+  }
+
+  &__justify {
+    &--between {
+      justify-content: space-between;
+    }
+
+    &--center {
+      justify-content: center;
+    }
+
+    &--start {
+      justify-content: flex-start;
+    }
+
+    &--end {
+      justify-content: flex-end;
+    }
+  }
+
+  &__grow {
+    flex-grow: 1;
+  }
+}
+
+appointment-datetime-input::part(flex) {
+  @extend .u-flex;
+  @extend .u-flex__align--baseline;
+  @extend .u-flex--wrap;
+  @extend .u-flex__gap--xs;
+}
+
+.u-grid {
+  display: grid;
+}
+
+
+// PADDING
+.u-pad {
+  padding: $space-md;
+
+  &--none {
+    padding: 0;
+  }
+
+  &--xs {
+    padding: $space-xs;
+  }
+
+  &--sm {
+    padding: $space-sm;
+  }
+
+  &--lg {
+    padding: $space-lg;
+  }
+
+  &--xl {
+    padding: $space-xl;
+  }
+
+  &__top {
+    padding-top: $space-md;
+
+    &--none {
+      padding-top: 0;
+    }
+
+    &--xs {
+      padding-top: $space-xs;
+    }
+
+    &--sm {
+      padding-top: $space-sm;
+    }
+
+    &--lg {
+      padding-top: $space-lg;
+    }
+
+    &--xl {
+      padding-top: $space-xl;
+    }
+  }
+
+  &__right {
+    padding-right: $space-md;
+
+    &--none {
+      padding-right: 0;
+    }
+
+    &--xs {
+      padding-right: $space-xs;
+    }
+
+    &--sm {
+      padding-right: $space-sm;
+    }
+
+    &--lg {
+      padding-right: $space-lg;
+    }
+
+    &--xl {
+      padding-right: $space-xl;
+    }
+  }
+
+  &__bottom {
+    padding-bottom: $space-md;
+
+    &--none {
+      padding-bottom: 0;
+    }
+
+
+    &--xs {
+      padding-bottom: $space-xs;
+    }
+
+    &--sm {
+      padding-bottom: $space-sm;
+    }
+
+    &--lg {
+      padding-bottom: $space-lg;
+    }
+
+    &--xl {
+      padding-bottom: $space-xl;
+    }
+  }
+
+  &__left {
+    padding-left: $space-md;
+
+    &--none {
+      padding-left: 0;
+    }
+
+    &--xs {
+      padding-left: $space-xs;
+    }
+
+    &--sm {
+      padding-left: $space-sm;
+    }
+
+    &--lg {
+      padding-left: $space-lg;
+    }
+
+    &--xl {
+      padding-left: $space-xl;
+    }
+  }
+}
+
+appointment-datetime-input::part(padding-vertical) {
+  margin: 0;
+  @extend .u-pad__top--sm;
+  @extend .u-pad__bottom--sm;
+}
+
+
+// MARGIN
+.u-push {
+  margin: $space-md;
+
+  &--none {
+    margin: 0;
+  }
+
+  &--auto {
+    margin: auto;
+  }
+
+  &--auto-horizontal {
+    margin: 0 auto;
+  }
+
+  &--xs {
+    margin: $space-xs;
+  }
+
+  &--sm {
+    margin: $space-sm;
+  }
+
+  &--lg {
+    margin: $space-lg;
+  }
+
+  &--xl {
+    margin: $space-xl;
+  }
+
+  &__top {
+    margin-top: $space-md;
+
+    &--none {
+      margin-top: 0;
+    }
+
+    &--xs {
+      margin-top: $space-xs;
+    }
+
+    &--sm {
+      margin-top: $space-sm;
+    }
+
+    &--lg {
+      margin-top: $space-lg;
+    }
+
+    &--xl {
+      margin-top: $space-xl;
+    }
+  }
+
+  &__bottom {
+    margin-bottom: $space-md;
+
+    &--none {
+      margin-bottom: 0;
+    }
+
+    &--xs {
+      margin-bottom: $space-xs;
+    }
+
+    &--sm {
+      margin-bottom: $space-sm;
+    }
+
+    &--lg {
+      margin-bottom: $space-lg;
+    }
+
+    &--xl {
+      margin-bottom: $space-xl;
+    }
+  }
+
+
+  &__left {
+    margin-left: $space-md;
+
+    &--none {
+      margin-left: 0;
+    }
+
+    &--xs {
+      margin-left: $space-xs;
+    }
+
+    &--sm {
+      margin-left: $space-sm;
+    }
+
+    &--lg {
+      margin-left: $space-lg;
+    }
+
+    &--xl {
+      margin-left: $space-xl;
+    }
+  }
+
+  &__right {
+    margin-right: $space-md;
+
+    &--none {
+      margin-right: 0;
+    }
+
+    &--xs {
+      margin-right: $space-xs;
+    }
+
+    &--sm {
+      margin-right: $space-sm;
+    }
+
+    &--lg {
+      margin-right: $space-lg;
+    }
+
+    &--xl {
+      margin-right: $space-xl;
+    }
+  }
+}
+
+// TYPOGRAPHY
+.u-text {
+
+  &--center {
+    text-align: center;
+  }
+
+  &--left {
+    text-align: left;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--lg {
+    font-size: 1.2rem;
+    line-height: $line-height-lg;
+  }
+
+  &--sm {
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+  }
+
+  &--bold {
+    font-weight: $font-weight-bold;
+  }
+
+  &--capitalize {
+    text-transform: capitalize;
+  }
+}
+
+.u-line-height {
+  &--sm {
+    line-height: 1;
+  }
+}
+
+
+// WIDTH
+.u-width {
+  &--fit-content {
+    width: fit-content;
+  }
+
+  &--65 {
+    width: 65%;
+  }
+
+  &__table {
+    &--xs {
+      width: 1px;
+    }
+  }
+}
+
+// BORDER
+.u-border {
+  &__top {
+    border-top: $border;
+  }
+
+  &__right {
+    border-right: $border;
+  }
+}
