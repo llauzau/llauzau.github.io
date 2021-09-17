@@ -11,26 +11,6 @@ $gray: #919191;
 $gray-dark: #565656;
 $gray-darker: #333333;
 $black: #222222;
-$orange: #F74F00;
-$orange-dark: #d33916;
-$orange-light: #f4a75b;
-$orange-lightest: #ffe6d1;
-$blue-bright: #429CE0;
-$blue: #2F51B6;
-$blue-md: darken($blue, 10%);
-$blue-dark: #242157;
-
-$color-alert: #b50000;
-$color-action: $orange;
-$color-action-light: $orange-light;
-$color-action-lightest: $orange-lightest;
-$color-success: #43bf69;
-$color-focus: $color-action;
-
-$orange-gradient: linear-gradient(to bottom right, $orange-dark, $orange);
-$blue-gradient: radial-gradient(ellipse at right, $blue, $blue-md);
-$gray-gradient: linear-gradient(to bottom, $gray-darker, $gray-dark);
-
 
 // VERTICAL GRID
 $grid: .22rem; // 4px
@@ -56,7 +36,7 @@ $box-shadow: 0px 6px 28px 0 transparentize($gray-dark, .8);
 $box-shadow-sm: 0px 4px 16px 0 transparentize($gray-dark, .8);
 
 // TYPOGRAPHY
-$font-family: "Nunito", Helvetica, Arial, sans-serif;
+$font-family: 'Lato', sans-serif;
 $font-size-base: 18px;
 $font-size-base-mobile: 16px;
 $font-size-xs: .75rem;

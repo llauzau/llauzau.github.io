@@ -1,31 +1,4 @@
 // COLOR
-.u-color {
-  &--alert {
-    color: $color-alert;
-    text-decoration-color: $color-alert;
-  }
-
-
-  &--info {
-    color: $color-action;
-  }
-
-  &--gray {
-    color: $gray-dark;
-  }
-
-  &--gray-light {
-    color: $gray;
-  }
-
-  &--blue {
-    color: $blue;
-  }
-
-  &--orange {
-    color: $orange;
-  }
-}
 
 // DISPLAY
 .u-display {
@@ -108,13 +81,6 @@
   &__grow {
     flex-grow: 1;
   }
-}
-
-appointment-datetime-input::part(flex) {
-  @extend .u-flex;
-  @extend .u-flex__align--baseline;
-  @extend .u-flex--wrap;
-  @extend .u-flex__gap--xs;
 }
 
 .u-grid {
@@ -243,13 +209,6 @@ appointment-datetime-input::part(flex) {
     }
   }
 }
-
-appointment-datetime-input::part(padding-vertical) {
-  margin: 0;
-  @extend .u-pad__top--sm;
-  @extend .u-pad__bottom--sm;
-}
-
 
 // MARGIN
 .u-push {
@@ -418,24 +377,6 @@ appointment-datetime-input::part(padding-vertical) {
 .u-line-height {
   &--sm {
     line-height: 1;
-  }
-}
-
-
-// WIDTH
-.u-width {
-  &--fit-content {
-    width: fit-content;
-  }
-
-  &--65 {
-    width: 65%;
-  }
-
-  &__table {
-    &--xs {
-      width: 1px;
-    }
   }
 }
 
