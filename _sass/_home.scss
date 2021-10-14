@@ -1,0 +1,23 @@
+.intro {
+    font-size: 1.85rem;
+    line-height: 1.6;
+    margin-top: $space-xxl;
+}
+
+
+.work {
+  display: grid;
+    gap: $space-lg $space-xl;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  
+  &__container {
+    background-color: $gray;
+    height: 200px;
+  }
+
+  &--extras {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}

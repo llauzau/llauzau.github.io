@@ -1,0 +1,59 @@
+a,
+.link {
+  color: $black;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $font-size-base;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    // outline: none;
+    text-decoration: underline;
+    text-decoration-color: $gray;
+    text-decoration-style: solid;
+    text-decoration-thickness: .3rem;
+    text-underline-offset: .2rem;
+  }
+
+  &--logo {
+    color: $gray-darker;
+    font-family:'Lora', serif;
+    font-size: $font-size-xl;
+    font-weight: $font-weight-bold;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+
+    }
+  }
+
+  &--batched {
+    &:hover,
+    &:focus {
+    text-decoration-color: $bright-blue;
+    }
+  }
+
+  &--frayt {
+    &:hover,
+    &:focus {
+    text-decoration-color: #f79d32;
+    }
+  }
+
+  &--mm {
+    &:hover,
+    &:focus {
+    text-decoration-color: #d4081e;
+    }
+  }
+
+  &--table {
+    &:hover,
+    &:focus {
+    text-decoration-color: #00a88f;
+    }
+  }
+}

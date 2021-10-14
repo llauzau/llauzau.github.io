@@ -3,20 +3,22 @@
 
 {% include head.html stylesheet="/css/app.css" %}
 <header class="top-nav">
-  <div class="logo">L.L.</div>
-  <div class="u-flex">
-    <a href="#">Work</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+  <a class="link link--logo" href="/">Lauren Lauzau</a>
+  <div class="u-flex u-flex__gap--lg">
+    <a class="link" href="/">Work</a>
+    <a class="link" href="/about">About</a>
+    <a class="link" href="/contact">Contact</a>
   </div>
 </header>
 
 <body>
-  <div>
-    <div>
-      {{ content }}
-    </div>
+  <div class="main">
+    {{ content }}
   </div>
 </body>
+
+<footer>
+  <a href="mailto:lauren@laurenlauzau.com">lauren@laurenlauzau.com</a>
+</footer>
 
 </html>

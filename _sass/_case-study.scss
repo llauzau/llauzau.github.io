@@ -1,0 +1,131 @@
+.tag {
+    font-family: $font-family;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    
+    &__batched {
+        color: $bright-blue;
+    }
+
+    &__frayt {
+        color: $orange;
+    }
+}
+
+.prj-name {
+    font-family: $font-family-header;
+    font-size: 2.5rem;
+    font-size: clamp(2rem, 6vmin, 2.5rem);
+    letter-spacing: .5px;
+    margin: -$space-sm 0 0 0;
+}
+
+.prj-color-bar {
+    height: $space-sm;
+    margin: $space-xl 0;
+    width: calc(#{$space-lg} * 2);
+
+    &__batched {
+        background-color: $bright-blue;
+    }
+
+    &__frayt {
+        background-color: $orange;
+    }
+}
+
+.swatch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__container {
+        background-color: $white;
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        height: calc(#{$space-xl} * 2);
+        padding: $space-sm;
+        width: calc(#{$space-xl} * 1.5);
+        
+        &__color {
+            height: calc(#{$space-xl} * 1.2);
+            width: calc(#{$space-xl} * 1.2);
+    
+            &--batched-blue {
+                background-color: $bright-blue;
+            }
+
+            &--batched-green {
+                background-color: #7fdb00;
+            }
+
+            &--batched-red {
+                background-color: #ff005d;
+            }
+
+            &--batched-yellow {
+                background-color: #ffc300;
+            }
+
+            &--batched-gray-light {
+                background-color: #f4f6f7;
+            }
+
+            &--batched-gray-dark {
+                background-color: #37414f;
+            }
+
+            &--frayt-orange {
+                background-color: #f79d32;
+            }
+
+            &--frayt-blue {
+                background-color: #1b3ad9;
+            }
+
+            &--frayt-green {
+                background-color: #1ec657;
+            }
+
+            &--frayt-gray {
+                background-color: #383838;
+            }
+
+            &--table-orange {
+                background-color: #f38230;
+            }
+
+            &--table-teal-dark {
+                background-color: #00a88f;
+            }
+
+            &--table-teal-light {
+                background-color: #63c3b0;
+            }
+
+            &--table-gray {
+                background-color: #818285;
+            }
+        }
+
+        p {
+            font-family: $font-family-header;
+            font-size: $font-size-xs;
+            margin-top: $space-sm;
+        }
+    }
+}
+
+.img-group {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: $space-sm;
+    
+    &--half {
+        grid-template-columns: 51% 48%;
+    }
+  }
